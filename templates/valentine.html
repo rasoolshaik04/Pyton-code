@@ -1,0 +1,68 @@
+html = f"""
+    <html>
+    <head>
+        <title>Valentine's Day</title>
+        <style>
+            body { 
+                font-family: 'Comic Sans MS', cursive; 
+                margin: 0; 
+                padding: 0;
+                background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container { 
+                background: white;
+                padding: 60px;
+                border-radius: 20px;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                max-width: 600px;
+            }
+            h1 { 
+                color: #ff1744;
+                font-size: 3em;
+                margin: 0;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .hearts { font-size: 4em; margin: 20px 0; }
+            .message { 
+                font-size: 1.8em;
+                color: #d81b60;
+                margin: 20px 0;
+                font-weight: bold;
+            }
+            .info { 
+                font-size: 1.2em;
+                color: #666;
+                margin: 20px 0;
+                line-height: 1.6;
+            }
+            a { 
+                display: inline-block;
+                margin-top: 30px;
+                padding: 10px 20px;
+                background: #ff1744;
+                color: white;
+                text-decoration: none;
+                border-radius: 10px;
+                font-size: 1.1em;
+            }
+            a:hover { background: #d81b60; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>💕 Valentine's Day 💕</h1>
+            <div class="hearts">💗 💕 💖</div>
+            <div class="message">{message}</div>
+            <div class="info">
+                February 14th - A Day of Love & Romance
+            </div>
+            <a href="/">← Back to Home</a>
+        </div>
+    </body>
+    </html>
+    """

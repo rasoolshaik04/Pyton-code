@@ -1,0 +1,25 @@
+html = f"""
+    <html>
+    <head>
+        <title>Date & Time</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+            .container { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                          color: white; padding: 50px; border-radius: 10px; display: inline-block; }
+            h1 { margin: 0; font-size: 2.5em; }
+            .date { font-size: 1.5em; margin-top: 20px; }
+            .time { font-size: 3em; font-weight: bold; margin-top: 20px; font-family: monospace; }
+            a { color: #667eea; text-decoration: none; margin-top: 30px; display: inline-block; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Date & Time</h1>
+            <div class="date">{date_str}</div>
+            <div class="time">{time_str}</div>
+        </div>
+        <br><br>
+        <a href="/">← Home</a> | <a href="/qr">← QR Code</a> | <a href="/calendar">← Calendar</a>
+    </body>
+    </html>
+    """
